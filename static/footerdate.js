@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var currentDateParagraph = document.getElementById('currentDateParagraph');
     
     if (currentDateParagraph) {
-        currentDateParagraph.textContent = '(C) NACOS Nasarawa State University Keffi  (c)' + currentYear + '  ' + 'Powered By SHRINE';
+        currentDateParagraph.textContent = 'NACOS Nasarawa State University Keffi  (c)' + currentYear + '  ' + 'Powered By SHRINE';
     } else {
         console.error('Element with id "currentDateParagraph" not found.');
     }
