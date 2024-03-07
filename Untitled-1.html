@@ -139,7 +139,56 @@
     </div>
   </div>
   
-  
+  <link href="homecss/all.min.css" rel="stylesheet">
+<link href="homecss/animate.min.css" rel="stylesheet">
+<link href="homecss/bootstrap-icons.css" rel="stylesheet">
+<link href="homecss/bootstrap.bundle.min.js.download" rel="stylesheet">
+<link href="homecss/bootstrap.min.css" rel="stylesheet">
+<link href="homecss/counterup.min.js.download" rel="stylesheet">
+<link href="homecss/css2" rel="stylesheet">
+<link href="homecss/easing.min.js.download" rel="stylesheet">
+<link href="homecss/ed7eb456dc.js.download" rel="stylesheet">
+<link href="homecss/jquery-3.4.1.min.js.download" rel="stylesheet">
+<link href="homecss/main.js.download" rel="stylesheet">
+<link href="homecss/owl.carousel.min.css" rel="stylesheet">
+<link href="homecss/owl.carousel.min.js.download" rel="stylesheet">
+<link href="homecss/style.css" rel="stylesheet">
+<link href="homecss/waypoints.min.js.download" rel="stylesheet">
+<link href="homecss/wow.min.js.download" rel="stylesheet">
+<link href="homecss/waypoints.min.js.download" rel="stylesheet">
+<link href="   " rel="stylesheet">
+
+\
+
+
+
+
+
+
+<div class="w3-container-fluid" style="height:50%">
+  <img class="mySlides w3-animate-" src="img/nsuk.jpg" style="width:100% ; height:30%">
+  <img class="mySlides  w3-animate-fading" src="img/nsuk.jpg" style="width:100% ; height:30%">
+  <img class="mySlides w3-animate-fading" src="img/nsuk.jpg" style="width:100% ; height: 30%;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 7000); // Change image every 7 seconds
+}
+</script>
+
+
   <br>
   <br>
   <br>
