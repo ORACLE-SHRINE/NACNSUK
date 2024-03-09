@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="w3c.css">
+    <link rel="stylesheet" href="css/index.css">
     <script defer src="static/footerdate.js"></script>
     <script  defer src="static/welslide.js"></script>
     <!--chatbot-->
@@ -148,98 +149,36 @@
   </div>
 <br><br>
 
-  
-    <div class="w3-left" style="padding-left: 7px;">
-   <p class="w3-mobile w3-left caveat  w3-button w3-win8-emerald w3-round-large" style="font-size: 21px; font-weight: 600;"> Hey Nacosite! </p> 
+<form id="paymentForm">
+  <div class="form-group w3-container w3-win8-emerald w3-round-large">
+    <label for="email">Email Address</label>
+    <input type="email" id="email-address" required />
   </div>
-  <div class="w3-container w3-mobile">
-   <p  class="w3-mobile exo" style="font-size: 17px;">Pay your dues and and other payments here and get your reciept with ease and no stress</p>
+  <div class="form-group">
+    <label for="amount">Amount</label>
+    <input type="tel" id="amount" required />
+  </div>
+  <div class="form-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" />
+  </div>
+  <div class="form-group">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" />
+  </div>
+  <div class="form-submit">
+    <button type="submit" onclick="payWithPaystack()"> Pay </button>
+  </div>
+</form>
+
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+<script src="js/payment.js"></script>
+
+
+
+
 <br>
-   
-   <p class="w3-mobile  exo " style="font-size: 19px;color: green; text-decoration: underline;"> Below are payments you can make :</p>
-   <ul class="w3-mobile  exo" style="font-size: 15px;">
-    <li>Annual Dues (1,500 Returning, 2,000 New Students)</li>
-    <li>T-shirt (3,300)</li>
-    <li>I.D Card (1,500)</li>
-    <li>Others...</li>
-   </ul>
-
-  </div>
-  
-   
-  <br>
-  <div class="w3-container w3-mobile">
-    <p class="kanit-regular w3-center w3-mobile" style="font-size: 23px; color: green; " >Paying via our web channel is:</p>
-  </div>
-  <br>
-  <br>
-  <div class="w3-center w3-mobile">
-  
-    <div class="w3-row-padding w3-center w3-mobile">
-      <div class="w3-col s4 w3-center w3-mobile">
-        <img src="icons/credit-card.png" class="w3-center"  style="width:17%; max-width: 20; max-width: 20;">
-        <p div class="w3-mobile kanit-regular w3- w3-round-large " style="color:rgb(0, 145, 0); font-size: 17px;"> FAST </p>
-      </div>
-      <div class="w3-col s4 w3-mobile">
-        <img src="icons/secure-payment.png" class="w3-center" style="width:17%">
-        <p div class="w3-mobile kanit-regular w3-  w3-round-large " style="color:rgb(0, 145, 0); font-size: 17px;">  SECURED  </p>
-      </div>
-      <div class="w3-col s4 w3-mobile">
-        <img src="icons/payment-method.png" class="w3-center" style="width:17%">
-        <p div class="w3-mobile kanit-regular w3-  w3-round-large " style="color:rgb(0, 145, 0); font-size: 17px;">  RELIABLE</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <h6 class="w3-button w3-hover w3-hover-green w3-win8-emerald w3-center w3-round-large exo w3-hover-shadow" ><a href="paystack/inde.html" style="text-decoration: none;">Pay Now</h6></a> <br>
-    <a style="width: 10%; min-width: 5px;  max-width: 7%;">
-  </div>
-    
-  
- 
-  <br>
-  <br>
-  <br>
-
-  <div class="w3-mobile w3-container w3-center w3-mobile">
-    <h5 style="color: green;" class="exo w3-mobile"> Have any questions or issues regarding payment? </h5>
-    <div class="exo w3-win8-emerald w3-button w3-round-large w3-hover-green">
-    <h6 class="exo">Contact us via web chat or helplines below
-      <p class="exo"> 09051145037 </p>
-    </h6>
-  </div>
-</div>
-  <br>
-
-  <div class=" w3-container w3-mobile exo w3-left w3-hide" >
-
-
-    <p style="font-weight: bold; text-decoration: underline; font-size:19px" class="w3-text-green">Payment support</p>
-
-    <a href="pay.php" style="text-decoration: none; color:green; font-size:16px ; font-size:16px;"  class="w3-hover w3-hover-text-green" >- Pay Dues</a>
-    <br><br>
-                <a href="###" style="text-decoration: none; color:green; font-size:16px;"  class="w3-hover w3-hover-text-green">- Print Reciept </a>
-                <br><br>
-                <a href="###" style="text-decoration: none; color:green ; font-size:16px;"  class="w3-hover w3-hover-text-green">- Query Payment Status</a>
-                <br><br>
-                <a href="###" style="text-decoration: none ;color:green; ; font-size:16px;" ; class="w3-hover w3-hover-text-green">- Payment Complaint</a>
-                <br><br>
-
-
-
- </div>
-  <br>
-  <br>
-  <br>
-  <br> 
-  <br>
-  <br>
-
-
-
-
-
+<br>
 <!--Footer Start-->
 <div class="w3-container-fluid w3-black W3-mobile " style="height: 100%">
   <footer>
