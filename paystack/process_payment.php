@@ -39,7 +39,6 @@ if (!$resultUserDetails) {
 $transactionReference = uniqid('paystack_ref_');
 
 // Close the database connection (temporarily)
-mysqli_close($yourDBConnection);
 
 // Continue with the Paystack payment initiation logic
 ?>
