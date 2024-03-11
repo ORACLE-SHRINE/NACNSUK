@@ -150,13 +150,15 @@
 <br><br>
 
 <form id="paymentForm">
-  <div class="form-group w3-container w3-win8-emerald w3-round-large">
+  <div class="form-group ">
+
     <label for="email">Email Address</label>
     <input type="email" id="email-address" required />
   </div>
+ 
   <div class="form-group">
     <label for="amount">Amount</label>
-    <input type="tel" id="amount" required />
+    <input type="dropdown" id="amount" required />
   </div>
   <div class="form-group">
     <label for="first-name">First Name</label>
@@ -166,6 +168,21 @@
     <label for="last-name">Last Name</label>
     <input type="text" id="last-name" />
   </div>
+  <div class="form-group ">
+
+    <label for="Level">Level</label>
+    <input type="dropdown" id="level" required />
+  </div>
+
+
+  <div class="form-group ">
+
+    <label for="item"></label>
+    <input type="dropdown" id="level" required />
+  </div>
+
+
+
   <div class="form-submit">
     <button type="submit" onclick="payWithPaystack()"> Pay </button>
   </div>
